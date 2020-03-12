@@ -37,14 +37,14 @@ Last 24h increment: 36.22 USD
 
 ## Run the script locally
 
-```npm install```
+```npm start```
 
 ## Run the script in Kubernetes
 
 ### Build
 
-1. cd to the project directory
-2. docker build --no-cache -t ``anyTagName:v1`` .
+```cd to the project directory```
+```docker build --no-cache -t ``anyTagName:v1`` .```
 
 ### Push the image to the Docker registry
 
