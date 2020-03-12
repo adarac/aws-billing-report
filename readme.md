@@ -43,8 +43,8 @@ Last 24h increment: 36.22 USD
 
 ### Build
 
-```cd to the project directory```
-```docker build --no-cache -t ``anyTagName:v1`` .```
+cd to the project directory  
+docker build --no-cache -t ``anyTagName:v1`` .
 
 ### Push the image to the Docker registry
 
