@@ -37,7 +37,7 @@ Last 24h increment: 36.22 USD
 
 ## Run the script locally
 
-    ```npm start```
+```npm install```
 
 ## Run the script in Kubernetes
 
