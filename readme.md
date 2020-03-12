@@ -2,11 +2,11 @@
 
 A Node.js script with the ```cron``` library that sends an email to some desired email addresses with basic information about the AWS bill. If having AWS multiple accounts, it will check these information for every account.
 
-Example:
+Example:  
 
-Current bill value: 136.41 USD
-Bill value 24h ago: 100.19 USD
-Last 24h increment: 36.22 USD
+Current bill value: 136.41 USD  
+Bill value 24h ago: 100.19 USD  
+Last 24h increment: 36.22 USD  
 
 ## Requirements
 
