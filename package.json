@@ -1,0 +1,21 @@
+{
+  "name": "aws-billing-report-cron",
+  "version": "1.0.0",
+  "description": "Script that sends a billing report by email",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adara Carrión Gallegos",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adarac/aws-billing-report-cron"
+  },
+  "dependencies": {
+    "aws-sdk": "2.591.0",
+    "cron": "1.8.2",
+    "dotenv": "8.2.0"
+  }
+}
