@@ -1,4 +1,4 @@
-# AWS DAILY BILLING REPORT
+# AWS BILLING REPORT
 
 A Node.js script with the ```cron``` library that sends an email to some desired email addresses with basic information about the AWS bill. If having AWS multiple accounts, it will check these information for every account.
 
