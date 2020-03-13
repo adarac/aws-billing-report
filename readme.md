@@ -10,14 +10,14 @@ Last 24h increment: 36.22 USD
 
 ## Requirements
 
-- AWS account
+- AWS account with Billing permissions
 - Subscribe the origin and destination emails in AWS SES (AWS Simple Email Service)
 
 ## Installation steps
 
 1. Clone this repository into any directory of your choice
 
-    ```git clone git@github.com:rediris-es/zoom-licenses-chatbot.git```
+    ```git clone git@github.com:adarac/aws-billing-report-cron.git```
 
 2. In the same directory, create a file called ```.env``` with the following environment variables. The xxx must be replaced by real values
 
