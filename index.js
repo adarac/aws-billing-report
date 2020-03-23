@@ -51,9 +51,7 @@ paramsTwoDaysAgo.EndTime = oneDayAgo
 
 // Funtions
 
-async function getMessages () {
-
-    let messages = []
+async function getMessages (messages) {
 
     for await (let account of accounts) {
 
@@ -160,7 +158,8 @@ async function sendEmail (messages) {
 // Execute the job
 let job = new CronJob(process.env.CRON, async () => {
 
-    let messages = await getMessages()
+    let messages = await getMessages([])
+    //await console.log(messages)
     await sendEmail(messages)
   
 }, null, true, 'Europe/Madrid');
