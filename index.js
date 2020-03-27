@@ -8,8 +8,6 @@
 // Requires and configuration
 require('dotenv').config({path:`${__dirname}/.env`})
 const AWS = require('aws-sdk')
-const CronJob = require('cron').CronJob;
-//AWS.config.logger = console;
 
 // Date variables
 
@@ -150,18 +148,17 @@ async function sendEmail (messages) {
     
     await ses.sendEmail(emailParams, (err, data) => {
         if (err) console.log(err, err.stack)
-        //else     console.log(data)
     });
 
 }
 
-// Execute the job
-let job = new CronJob(process.env.CRON, async () => {
+// Main function 
+
+let init = async () => {
 
     let messages = await getMessages([])
-    //await console.log(messages)
     await sendEmail(messages)
   
-}, null, true, 'Europe/Madrid');
-  
-job.start();
+}	
+
+init();
