@@ -34,7 +34,7 @@ Last 24h increment: 35.00 USD
     | ---------------------------------------- | ------------------------------------------------ |
     | AWS_ACCESS_KEY_ID=xxx                    | AWS Access Key with Billing permissions          |
     | AWS_SECRET_ACCESS_KEY=xxx                | AWS Secret for the account                       |
-    | AWS_REGION=xxx                           | AWS Region (i.e.: eu-west-01)                    |
+    | AWS_REGION=xxx                           | AWS Region (ie: ``us-east-1``)                   |
     | TO_EMAILS=["xxx@xxx","xxx@xxx"]          | Email address where to send the emails           |
     | AWS_ACCOUNTS=[{"name":"xxx","id":"xxx"}] | List of AWS accounts to watch                    |
     | SENDING_METHOD=xxx                       | Sending method chosen: ``mailer`` or ``ses``     |
