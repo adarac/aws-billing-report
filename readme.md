@@ -8,6 +8,13 @@ Current bill value: 135.00 USD
 Bill value 24h ago: 100.00 USD  
 Last 24h increment: 35.00 USD  
 
+## Contents
+1. [Requirements](#Requirements)
+2. [Installation steps](#Installation-steps)
+3. [Run the script locally](#Run-the-script-locally)
+4. [Run the script in a Docker container](#Run-the-script-in-a-Docker-container)
+5. [Run the script in Kubernetes](#Run-the-script-in-Kubernetes)
+
 ## Requirements
 
 - AWS account with Billing permissions
@@ -36,7 +43,7 @@ Last 24h increment: 35.00 USD
 
     | Variable                                 | Description                                      |
     | ---------------------------------------- | ------------------------------------------------ |
-    | GMAIL_USER=xxx@gmail.com                 | Gmail account from where to send the emails      |
+    | GMAIL_USER=xxx@gmail<i></i>.com          | Gmail account from where to send the emails      |
     | GMAIL_CLIENT_ID=xxx                      | Obtained from the Google API Console             |
     | GMAIL_CLIENT_SECRET=xxx                  | Obtained from the Google API Console             |
     | GMAIL_REFRESH_TOKEN=xxx                  | Obtained from the Google API Console             |
@@ -69,12 +76,12 @@ docker run ``tagName``
 
 ## Run the script in Kubernetes
 
-### Build
+### Build the image
 
 cd to the project directory  
 docker build --no-cache -t ``tagName:v1`` .
 
-### Push the image to the Docker registry
+### Push the image to your Docker registry
 
 docker push ``tagName:v1``
 
