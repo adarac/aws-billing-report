@@ -174,7 +174,7 @@ async function sendEmail (sendingMethod, messages, toEmails) {
             }
         });
 
-    } else if (sendingMethod == 'mailer') {
+    } else if (sendingMethod == 'ses') {
 
     //********* WITH AWS SES *********//
 
