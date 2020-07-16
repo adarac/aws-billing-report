@@ -19,7 +19,7 @@ Last 24h increment: 35.00 USD
 
 - AWS account with Billing permissions
 - Two options:
-    - **OPTION 1 (mailer)**: If you want to send the report from a Gmail account using Nodemailer, you need to create a project using the Gmail API in <https://console.developers.google.com/> and authorize the application.
+    - **OPTION 1 (mailer)**: If you want to send the report from a Gmail account using Nodemailer, you need to create a project using the Gmail API in <https://console.developers.google.com/> and authorize the application. Here's how to get the refresh token: <https://stackoverflow.com/questions/24098461/nodemailer-gmail-what-exactly-is-a-refresh-token-and-how-do-i-get-one>
     - **OPTION 2 (ses)**: If you prefer to send the report from AWS SES (AWS Simple Email Service), you must subscribe the origin and destination emails in AWS SES.
 
 ## Installation steps
